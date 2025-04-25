@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: dagster-and-dbt
+Version: 0.0.1
+Summary: Dagster and dbt
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: dagster==1.10.*
+Requires-Dist: dagster-webserver
+Requires-Dist: dagster-cloud
+Requires-Dist: dagster-duckdb
+Requires-Dist: dagster-dbt
+Requires-Dist: dbt-duckdb
+Requires-Dist: geopandas
+Requires-Dist: pandas[parquet]
+Requires-Dist: shapely
+Requires-Dist: matplotlib
+Requires-Dist: smart_open[s3]
+Requires-Dist: s3fs
+Requires-Dist: smart_open
+Requires-Dist: boto3
+Requires-Dist: pyarrow
+
+# Dagster and dbt
+
+## Overview
+
+In this course, you'll learn how to integrate and orchestrate dbt projects with Dagster. You'll load dbt models into Dagster as assets, build dependencies, and ready your project for production deployment.
+
+## Completed code
+
+If you are stuck you can reference the completed code for each lesson.
+
+```
+dagster_and_dbt
+├── completed
+│   ├── lesson_3
+│   ├── lesson_4
+│   ├── lesson_5
+│   └── lesson_6
+```
+
+## Dagster UI
+
+To launch the UI for your project you can execute.
+
+```bash
+dagster dev
+```
+
+Open http://localhost:3000 with your browser to see the project.
+
+> [!NOTE]
+> Running `dagster dev` will put you in the starter Dagster project. To see any of the completed lessons execute.
+> `dagster dev -m dagster_and_dbt.completed.lesson_{LESSON NUMBER}.definitions`
+
+## Deploy on Dagster Cloud
+
+The easiest way to deploy your Dagster project is to use Dagster Cloud.
+
+Check out the [Dagster Cloud Documentation](https://docs.dagster.cloud) to learn more. 
